@@ -1,0 +1,27 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><link rel="stylesheet" href="mock.css"><script src="mock-data.js"></script></head><body><header class="app"><h1>厳選ポケモン管理</h1><nav><a class="on">一覧</a><a>データ管理</a></nav></header><main style="max-width:880px;margin:0 auto">
+<div style="margin-bottom:12px;color:var(--muted)">← 一覧に戻る</div>
+<div class="panel" style="display:flex;gap:18px;align-items:center">
+  <div class="icon" style="width:88px;height:88px;font-size:13px">画像</div>
+  <div style="flex:1"><div style="font-size:22px;font-weight:bold">ピカ1号 <span style="color:var(--gold)">★</span></div>
+  <div class="sub" style="color:var(--muted)">ピカチュウ / Lv.45</div>
+  <div class="badges"><span class="badge spe">きのみ</span><span class="badge">きのみ要員</span><span class="tag">#エース</span><span class="tag">#でんき</span></div></div>
+  <div><span class="btn">編集</span> <span class="btn danger">削除</span></div>
+</div>
+<div style="display:grid;grid-template-columns:1fr 1fr;gap:16px">
+<div class="panel"><h3>性格</h3><table class="table">
+<tr><th>性格</th><td><b>さみしがり</b></td></tr>
+<tr><th>上昇</th><td class="up">▲ おてつだいスピード</td></tr>
+<tr><th>下降</th><td class="down">▼ げんき回復量</td></tr></table>
+<h3 style="margin-top:14px">食材・メインスキル</h3><table class="table">
+<tr><th>食材 Lv1</th><td>とくせんリンゴ</td></tr>
+<tr><th>食材 Lv30</th><td>あったかジンジャー</td></tr>
+<tr><th>食材 Lv60</th><td>とくせんエッグ（未解放）</td></tr>
+<tr><th>メインスキルLv</th><td>3</td></tr></table></div>
+<div class="panel"><h3>サブスキル</h3><div class="skills" id="s" style="gap:6px"></div>
+<h3 style="margin-top:14px">管理情報</h3><table class="table">
+<tr><th>厳選完了日</th><td>2026/09/20</td></tr>
+<tr><th>登録日時</th><td>2026/09/20 22:14</td></tr>
+<tr><th>更新日時</th><td>2026/09/25 07:02</td></tr>
+<tr><th>メモ</th><td>ピカチュウの森用。次はおてつだいスピードM狙い。</td></tr></table></div>
+</div></main>
+<script>document.getElementById('s').innerHTML = skillRows(SAMPLES[0])</script></body></html>
