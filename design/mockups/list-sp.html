@@ -1,0 +1,6 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><link rel="stylesheet" href="mock.css"><script src="mock-data.js"></script></head><body><header class="app" style="padding:12px 16px"><h1 style="font-size:16px">厳選ポケモン管理</h1><span>☰</span></header>
+<main style="padding:12px 16px">
+<div class="toolbar"><span class="input" style="width:100%">名前・タグで検索</span><span class="select">とくい</span><span class="select">用途</span><span class="select">並び順</span><span class="btn">★</span></div>
+<div class="grid" id="g" style="grid-template-columns:1fr"></div></main>
+<div style="position:fixed;right:18px;bottom:22px;width:56px;height:56px;border-radius:50%;background:var(--primary);color:#fff;font-size:28px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 12px rgba(0,0,0,.25)">＋</div>
+<script>renderCards(document.getElementById('g'), 3)</script></body></html>
